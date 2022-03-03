@@ -13,6 +13,7 @@ function Home() {
         <Link href="/browse">
           <a className={css.link}>Get Started</a>
         </Link>
+        
       
     </div>
   );
