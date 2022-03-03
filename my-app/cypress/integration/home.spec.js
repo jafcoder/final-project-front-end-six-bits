@@ -5,6 +5,6 @@ context('Home Page', () => {
     cy.visit('http://localhost:3000')
   })
     it('should load our app and show content', () => {
-      cy.get('h1').contains("SalVeg")
+      cy.get('span').contains("Shapeless")
     })
   })
