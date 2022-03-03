@@ -1,25 +1,33 @@
-import Image from "next/image";
-import cucumber from "../../public/images/cucumber.jpg";
-import css from "../../styles/card.module.css";
+import { Card,Col, Row} from "react-bootstrap";
 
-const Card = ({ data }) => {
+const Vegcard = ({ data }) => {
   return (
-    <div className={css.card}>
-      <div className={css.cardBody}>
-        <Image src={cucumber} alt="cucumber"></Image>
-        <h2 className={css.cardTitle}>{data.title}</h2>
-        <p>{data.date}</p>
-        <p className={css.cardDescription}>{data.description}</p>
-        <p>{data.email}</p>
-        <p>{data.full_name}</p>
-        <p>{data.location}</p>
-        <p>{data.phone_number}</p>
-        <p>£{data.price}</p>
-      </div>
-    </div>
+    <Row xs={1} s={1} md={2} lg={3}  className="g-4">
+  {Array.from({ length: 6 }).map((_,idx ) => (
+    <Col>
+      <Card>
+      <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Item</Card.Title>
+          <Card.Text>
+              Tastes soo good
+              <br/>
+            Date: 
+            22/02/22
+              <br/>
+            Price: 
+            £2
+            <br/>
+            location: Birmingham
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </Col>
+  ))}
+</Row>
   );
 };
 
-export default Card;
+export default  Vegcard;
 
 //

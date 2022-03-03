@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import vegImage from "../public/images/produce-box.jpeg";
 import Image from "next/image";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import css from "../styles/Home.module.css";
 function Home() {
