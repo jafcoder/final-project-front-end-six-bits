@@ -6,7 +6,7 @@ import { setupWorker, rest } from "msw";
 
 if (typeof global.process === "undefined") {
   const worker = setupWorker(
-    rest.get("http://localhost:3000/api/posts", (req, res, ctx) => {
+    rest.get("https://sixbits-project.herokuapp.com/api/posts", (req, res, ctx) => {
       return res(ctx.json({  "user_id": 1,
       "title": "Wild Garlic",
       "description": "The smell of spring!",

@@ -7,3 +7,7 @@ export default {
 };
 
 export const HomePage = () => <Home />
+
+// withoutName = {};
+
+// WithName = { args: {name: "John Doe"} };
