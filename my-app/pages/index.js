@@ -8,7 +8,7 @@ import homeImage2 from "../public/images/homeImage2.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import css from "../styles/Home.module.css";
-function Home() {
+function Home () {
   return (
     <div className={css.home}>
       <div className={css.rightSide}>

@@ -1,9 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-
-/* .about {
-  font-family: "Chewy";
+.about {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   display: flex;
   flex-direction: column;
 }
@@ -13,6 +9,7 @@
   margin: 30px 20px;
   padding: 10px;
 }
+
 .cardHorizontal {
   display: flex;
   flex: 1 1 auto;
@@ -29,6 +26,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10%;
+  display: inline-block;
+  width:18em;
+  text-align:justify;
 }
 #button1 {
   width: 300px;
@@ -67,6 +67,7 @@
 #button2,
 #button3 {
   display: inline-block;
+  /* additional code */
 }
 #tasteless {
   font-family: cursive;
@@ -114,107 +115,13 @@
 .sloganContainer {
   text-align: center;
 }
-.donateicon {
-  color: #9acd32;
+.donateicon{
+  color: 	#9ACD32;
   width: 100px;
   height: 100px;
   float: left;
-  margin-left: 50px;
-} */
+  position: relative;
+  
 
-.container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+
 }
-
-.title {
-  text-align: center;
-  font-family: "Chewy";
-  font-size: 3vw;
-  color: #0c0c40;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-.contentContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-.content {
-  display: flex;
-  align-items: center;
-  background-color: rgb(189, 224, 255);
-  border-bottom: 10px white solid;
-}
-
-.textContent {
-  max-width: 75vw;
-  text-align: center;
-}
-
-.contentTitle {
-  font-weight: bold;
-  font-family: "Chewy";
-  font-size: 3vw;
-  color: #0c0c40;
-}
-
-.content:nth-child(2) {
-  flex-direction: row-reverse;
-}
-
-.bottomContainer {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-}
-
-.infoContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.donateicon {
-  color: #9acd32;
-  width: 200px;
-  height: 200px;
-}
-
-.sloganContainer {
-  text-align: center;
-}
-
-.slogan {
-  font-family: "Chewy", cursive;
-  font-size: 2vw;
-  color: #0c0c40;
-}
-
-.tasteless {
-  font-family: "Courgette", cursive;
-}
-
-.button {
-  background-color: #f76e11;
-  color: white;
-  padding: 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  border: none;
-}
-
-/* .button {
-  width: 300px;
-  padding: 15px;
-  background-color: #f76e11;
-  border-radius: 10px;
-  cursor: pointer;
-  color: white;
-  margin: 100px;
-  margin-right: 100px;
-  display: flex;
-  border: none;
-} */
