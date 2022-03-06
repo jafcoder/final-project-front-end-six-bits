@@ -6,14 +6,14 @@ import homeImage from "../public/images/vegbox.jpg";
 import homeImage1 from "../public/images/homeImage1Copy.png";
 import homeImage2 from "../public/images/homeImage2.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+//added name prop to home - storybook testing
 import css from "../styles/Home.module.css";
-function Home () {
+function Home ({name = ""}) {
   return (
     <div className={css.home}>
       <div className={css.rightSide}>
         <div className={css.titleText}>
-          <span>Shapeless </span>
+          <span>Shapeless {name && `${name}`} </span>
           <br></br> <span className={css.altColour}> not</span> <br></br>
           <span>Tasteless</span>
         </div>

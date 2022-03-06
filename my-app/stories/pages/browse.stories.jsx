@@ -8,9 +8,9 @@ export default {
 
 export const BrowsePage = () => <Browse />
 
-withoutName = {};
+// withoutName = {};
 
-WithName = { args: {name: "John Doe"} };
+// WithName = { args: {name: "John Doe"} };
 
 // export const BrowsePage = (args, {loaded:{title}}) => (<Browse {...args} title={title} />);
 // BrowsePage.args = {  "user_id": 1,
