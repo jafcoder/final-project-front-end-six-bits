@@ -104,8 +104,8 @@ function About() {
             id={css.image}
             src={Farmwaste}
             alt="Card image cap"
-            width={600}
-            height={500}
+            width={800}
+            height={700}
           ></Image>
           <div className={css.textContent}>
             <h2 className={css.contentTitle}>
