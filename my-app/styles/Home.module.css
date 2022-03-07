@@ -58,6 +58,8 @@
   .home {
     justify-content: center;
     align-items: center;
+    width: 100%;
+    font-size: 48px;
   }
   .titleText{
     font-size: 48px;
@@ -69,7 +71,12 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    padding: 5px;
+    padding: 3px;
+    margin-bottom: 15px;
+  }
+  .homeImage1{
+    height: auto;
+    width: auto;
   }
 }
 /* .home {
