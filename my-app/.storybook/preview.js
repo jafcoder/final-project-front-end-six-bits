@@ -4,8 +4,9 @@ import * as NextImage from "next/image";
 
 import { setupWorker, rest } from "msw";
 
-if (typeof global.process === "undefined") {
-  const worker = setupWorker(
+if ( global.process === "undefined") {
+  const worker = setupWorker();
+  worker.start(
     rest.get("https://sixbits-project.herokuapp.com/api/posts", (req, res, ctx) => {
       return res(ctx.json({  "user_id": 1,
       "title": "Wild Garlic",
@@ -14,9 +15,10 @@ if (typeof global.process === "undefined") {
       "free": false,
       "price": 100.30,
       "date": "23/2/2022"}));
-    })
+    }
   )
-  worker.start();
+  )
+
 }
 
 const OriginalNextImage = NextImage.default;
@@ -39,4 +41,5 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  
 }

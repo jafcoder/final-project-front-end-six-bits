@@ -7,6 +7,23 @@ import OptionsBar from "../Components/OptionsBar";
 
 const URL = process.env.NEXT_PUBLIC_API_URL;
 
+//storybook testing for browse
+export async function getServerSideProps() {
+  const res = await fetch(`https://sixbits-project.herokuapp.com/api/posts`)
+  const datas = await res.json()
+
+  if (!datas) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return (
+    [...datas.payload] 
+    )// will be passed to the page component as props
+  
+}
+
 function Browse() {
   const [data, setData] = useState([]);
   const [area, setArea] = useState("");
