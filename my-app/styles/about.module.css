@@ -214,14 +214,24 @@
 }
 @media only screen and (max-width: 650px){
     .infoContainer{
-      width: 100px;
-      height: 100px;
+      width: 135px;
+      height: 135px;
       justify-content: center;
       align-items: center;
       margin-bottom: 20px;
     }
     .button{
-      font-size: 0.5rem;
+      font-size: 0.7rem;
+    }
+    .textContent{
+      font-size: 18px;
+    }
+    .contentTitle{
+      font-size: 22px;
+    }
+    .image{
+      width: 500px;
+      height: 500px;
     }
 }
 
