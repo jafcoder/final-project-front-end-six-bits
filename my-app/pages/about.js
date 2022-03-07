@@ -20,7 +20,7 @@ function About() {
       <Carousel
         style={{
           position: "relative",
-          width: "50%",
+          width: "100%",
           margin: "0 auto",
         }}
       >
@@ -130,8 +130,8 @@ function About() {
             id={css.image}
             src={Farmwaste}
             alt="Card image cap"
-            width={400}
-            height={300}
+            width={700}
+            height={600}
           ></Image>
           <div className={css.textContent}>
             <h2 className={css.contentTitle}>You can make a difference</h2>
