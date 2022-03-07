@@ -65,6 +65,12 @@
   .subText{
     font-size:20px;
   }
+  .link{
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 5px;
+  }
 }
 /* .home {
   width: 100%;
