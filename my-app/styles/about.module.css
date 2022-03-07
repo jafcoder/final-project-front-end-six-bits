@@ -229,9 +229,12 @@
     .contentTitle{
       font-size: 22px;
     }
-    .image{
-      width: 500px;
-      height: 500px;
+    .contentImage{
+      /* width: 800px;
+      height: 700px;
+      justify-content: center;
+      align-items: center; */
+      display: hidden;
     }
 }
 
