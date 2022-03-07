@@ -15,9 +15,9 @@ test("test that the buttontext has the same input in the DOM", ()=> {
     expect(actual).toBeInTheDocument();
 })
 
-test("test that handelclick is called when a onclick happens", ()=> {
-    const { getByText } = render(<Home {...testProps}/>)
-    const button = getByText("Get Started")
-    fireEvent.click(button);
-    expect(testProps.home).toHaveBeenCalled();
-})
+// test("test that Link is called when a onclick happens", ()=> {
+//     const { getByText } = render(<Home {...testProps}/>)
+//     const button = getByText("Get Started")
+//     fireEvent.click(button);
+//     expect(testProps.home).toHaveBeenCalled();
+// })
