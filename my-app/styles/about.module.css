@@ -234,7 +234,7 @@
       height: 700px;
       justify-content: center;
       align-items: center; */
-      display: hidden;
+      display: none;
     }
 }
 
