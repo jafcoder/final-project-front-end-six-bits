@@ -43,3 +43,14 @@
   height: 1000px;
   width: 1000px;
 }
+@media screen and (max-width: 600px){
+  .container{
+     /* width: 100px; */
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+}
