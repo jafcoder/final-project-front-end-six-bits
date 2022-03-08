@@ -4,7 +4,7 @@ import Image from "next/image";
 import css from "../../styles/userpost.module.css";
 import {FaTrashAlt} from "react-icons/fa";
 
-function UserPost({ data }) {
+function UserPost({ data, action }) {
   
   console.log(data);
   return (
@@ -18,7 +18,7 @@ function UserPost({ data }) {
                   boxShadow: "1px 1px grey",
                 }}
               >
-               <button className={css.deleteBtn}><FaTrashAlt/></button>
+               <button className={css.deleteBtn} onClick={()=>action(data[idx].post_id)}><FaTrashAlt/></button>
                 <Image
                   variant="top"
                   alt={data[idx]?.title}
