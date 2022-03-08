@@ -18,7 +18,7 @@ function UserPost({ data }) {
                   boxShadow: "1px 1px grey",
                 }}
               >
-               <button><FaTrashAlt/></button>
+               <button className={css.deleteBtn}><FaTrashAlt/></button>
                 <Image
                   variant="top"
                   alt={data[idx]?.title}

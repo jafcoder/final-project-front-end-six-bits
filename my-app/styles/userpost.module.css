@@ -4,7 +4,22 @@
   overflow-y: auto;
   max-height: 800px;
 }
-.button{
-  background-color: red;
-  color: white
+.deleteBtn{
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #f7c151;
+  color: white;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15px;
+}
+.deleteBtn:hover{
+  background-color: #dfa633 ;
+}
+@media (max-width: 600px){
+  
 }

@@ -4,6 +4,14 @@
   text-align: center;
 }
 
-#cardContainer {
-  background-color: red;
+
+@media screen and (max-width: 600px){ 
+.wrapper {
+   grid-template-columns: repeat(auto-fit, maxmin(14rem, 16rem))
+}
+.card {
+flex-direction:column;
+text-align: center;
+min-width: 14rem
+}
 }
