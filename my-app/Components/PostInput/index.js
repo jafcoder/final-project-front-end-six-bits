@@ -67,21 +67,6 @@ const PostInput = () => {
       alert("Please insert all the required fields.");
     }
   };
-
-  const deletePost = (post_id) => {
-    async function remove() {
-      const response = await fetch(`${URL}/posts/${post_id}`, {
-        headers: { "Content-Type": "application/json" },
-        method: "DELETE",
-      });
-      const responseMessage = await response.json();
-      console.log(responseMessage);
-    }
-    remove();
-    const newList = posts.filter((post) => post.post_id !== post_id);
-    setPosts([...newList]);
-  };
-  
   return (
     <div className={css.container}>
       <div className={css.postInput}>
@@ -179,12 +164,12 @@ const PostInput = () => {
           {"*"}
           <br />
           <br />
-          <button type="submit">Post data</button>
+          <button className={css.addPost}type="submit">Add</button>
         </form>
       </div>
       <div className={css.postDisplay}>
-        <h1>Your posts</h1>
-        <UserPost data={posts} action={deletePost}/>
+        <h1 >Your posts</h1>
+        <UserPost data={posts} />
       </div>
     </div>
   );

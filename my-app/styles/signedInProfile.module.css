@@ -1,7 +1,23 @@
 .container {
   display: flex;
   justify-content: space-around;
-  padding-top: 100px;
+  padding-top: 50px;
+}
+.addPost{
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #f7c151;
+  color: white;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15px;
+}
+.addPost:hover{
+  background-color: #dfa633 ;
 }
 @media (max-width: 768px) {
   .container {
@@ -31,10 +47,7 @@
   
 }
 @media (max-width: 768px) {
-  .inputTitle{
-    margin-top: 30px;
-    padding:30px 0;
-  }
+  
   .postDisplay {
     margin: 30px 0;
     

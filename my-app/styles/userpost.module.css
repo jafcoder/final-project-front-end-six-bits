@@ -2,7 +2,7 @@
   text-align: center;
   overflow-x: hidden;
   overflow-y: auto;
-  max-height: 800px;
+  max-height: 600px;
 }
 .deleteBtn{
   border: none;
@@ -20,6 +20,9 @@
 .deleteBtn:hover{
   background-color: #dfa633 ;
 }
+
 @media (max-width: 600px){
-  
+  .title{
+    margin-top: 20px;
+  }
 }
