@@ -127,7 +127,9 @@ const Vegcard = ({ data, area }) => {
             </Col>
           ))}
         </Row>
+        
       </div>
+
     );
   }
 };

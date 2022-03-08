@@ -42,8 +42,11 @@ const ProfileInput = () => {
       const responseMessage = await response.json();
       console.log(responseMessage);
     }
-
-    createUser();
+    if (firstName && secondName && phoneNumber) {
+      createUser();
+    } else {
+      alert("Please insert all the required fields.");
+    }
   };
 
   function calculateDate() {
@@ -69,7 +72,7 @@ const ProfileInput = () => {
               id="firstName"
               name="firstName"
               value={firstName}
-              placeholder="Enter first name"
+              placeholder="Enter first name *"
               onChange={onChange}
             ></input>
           </div>
@@ -82,7 +85,7 @@ const ProfileInput = () => {
               id="secondName"
               name="secondName"
               value={secondName}
-              placeholder="Enter second name"
+              placeholder="Enter second name *"
               onChange={onChange}
             ></input>
           </div>
@@ -95,7 +98,7 @@ const ProfileInput = () => {
               id="phoneNumber"
               name="phoneNumber"
               value={phoneNumber}
-              placeholder="Enter phone number"
+              placeholder="Enter phone number *"
               onChange={onChange}
             ></input>
           </div>
@@ -103,7 +106,7 @@ const ProfileInput = () => {
           <br />
           <div className={css.btnContainer}>
             <button type="submit">Update Profile</button>
-          </div>
+          </div> 
         </form>
       </div>
     </div>

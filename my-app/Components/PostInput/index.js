@@ -7,7 +7,7 @@ const URL = process.env.NEXT_PUBLIC_API_URL;
 
 const PostInput = () => {
   const { user } = useUser();
-  console.log(user);
+
   const [formData, setFormData] = useState({
     auth_id: user.sub,
     title: "",
@@ -17,18 +17,22 @@ const PostInput = () => {
     price: 0,
     date: "",
   });
-  const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    async function getUserData() {
-      const resp = await fetch(`${URL}/posts/${user.sub}`);
-      const data = await resp.json();
-      if (data.payload.length > 0) {
-        setPosts([...posts, ...data.payload]);
-      }
+  const [posts, setPosts] = useState([]);
+  const [update, setUpdate] = useState(false);
+
+  async function getUserData() {
+    const resp = await fetch(`${URL}/posts/${user.sub}`);
+    const data = await resp.json();
+    if (data.payload.length > 0) {
+      return data.payload;
     }
-    getUserData();
-  }, []);
+  }
+
+  useEffect(async () => {
+    const data = await getUserData();
+    setPosts([...data]);
+  }, [update]);
 
   const { title, description, location, price, date } = formData;
 
@@ -50,8 +54,18 @@ const PostInput = () => {
       const responseMessage = await response.json();
       console.log(responseMessage);
     }
-    postData();
-    setPosts([...posts, formData]);
+    if (
+      formData.title &&
+      formData.description &&
+      formData.location &&
+      formData.date &&
+      formData.free
+    ) {
+      postData();
+      setUpdate(!update);
+    } else {
+      alert("Please insert all the required fields.");
+    }
   };
   return (
     <div className={css.container}>
@@ -72,7 +86,7 @@ const PostInput = () => {
               id="title"
               name="title"
               value={title}
-              placeholder="Title"
+              placeholder="Title *"
               autoComplete="off"
               onChange={onChange}
             ></input>
@@ -85,7 +99,7 @@ const PostInput = () => {
               id="description"
               name="description"
               value={description}
-              placeholder="Description"
+              placeholder="Description *"
               autoComplete="off"
               onChange={onChange}
             ></input>
@@ -98,14 +112,14 @@ const PostInput = () => {
               id="location"
               name="location"
               value={location}
-              placeholder="Location"
+              placeholder="Location *"
               autoComplete="off"
               onChange={onChange}
             ></input>
           </div>
           <br />
           <br />
-          <p>Is it free?</p>
+          <p>Is it free? *</p>
           <input
             type="radio"
             id="true"
@@ -136,7 +150,7 @@ const PostInput = () => {
           <br />
           <br />
           <label htmlFor="start">
-            <span>Date:</span>
+            <span>Date: </span>
           </label>
           <input
             type="date"
@@ -146,7 +160,8 @@ const PostInput = () => {
             min="2018-01-01"
             max="2022-12-31"
             onChange={onChange}
-          />{" "}
+          />
+          {"*"}
           <br />
           <br />
           <button type="submit">Post data</button>
