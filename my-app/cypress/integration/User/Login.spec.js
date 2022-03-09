@@ -1,10 +1,15 @@
-context('Logging in', () => {
-  it('should login', () => {
-    cy.login().then(() => {
-      // Now run your test...
-      cy.request('/api/auth/me').then(({ body: user }) => {
-        expect(user.email).to.equal(Cypress.env('auth0Username'));
-      });
-    });
-  });
-});
+
+
+  // first visit login URL 
+  // find the input field for username
+  // enter the username
+  // find the passowrd field
+  // enter the password
+  // press the submit button
+  // automatically directed to the homepage
+
+
+context('Login page', () => {
+  beforeEach(() =>{
+    cy.visit('http://localhost:3000')
+  })
