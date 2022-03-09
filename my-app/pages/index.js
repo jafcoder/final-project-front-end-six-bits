@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import css from "../styles/Home.module.css";
 
-function Home() {
+function Home({name}) {
   return (
     <div className={css.home}>
       <Head>
