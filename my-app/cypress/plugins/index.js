@@ -20,3 +20,11 @@ module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 }
+
+// cypress/plugins/index.js
+
+const encrypt = require('cypress-nextjs-auth0/encrypt');
+
+module.exports = (on, config) => {
+  on('task', { encrypt });
+};
