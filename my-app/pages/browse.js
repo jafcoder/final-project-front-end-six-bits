@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Vegcard from "../Components/Card";
 import css from "../styles/browse.module.css";
 import SubmitModal from "../Components/SubmitModal";
+import Head from "next/head";
 
 import OptionsBar from "../Components/OptionsBar";
 
@@ -44,6 +45,9 @@ function Browse() {
 
   return (
     <div className={css.wrapper}>
+      <Head>
+        <title>SalVeg | Browse</title>
+      </Head>
       <OptionsBar handleOnChange={handleOnChange} />
       {data.length === 0 ? (
         <h1>Loading...</h1>

@@ -6,10 +6,10 @@ function OptionsBar({ handleOnChange }) {
   return (
     <div className={css.options}>
       <LocationSelect handleOnChange={handleOnChange} />
-      <p>All</p>
+      {/* <p>All</p>
       <p>For Sale</p>
       <p>For Free</p>
-      <SubmitModal />
+      <SubmitModal /> */}
     </div>
   );
 }

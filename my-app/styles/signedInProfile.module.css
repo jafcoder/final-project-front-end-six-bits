@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.addPost {
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #f7c151;
+  color: white;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15px;
+}
+.addPost:hover {
+  background-color: #dfa633;
+}
+
+.postDisplay {
+  min-width: 800px;
+  min-height: 600px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 30px 20px;
+  }
+}
+.postInput {
+  background-color: rgb(248, 248, 248);
+  padding: 100px;
+  border-radius: 20px;
+}
+
+.inputTitle {
+  font-family: "Chewy";
+  font-size: 2em;
+}
+
+.inputContainer {
+  border-bottom: 4px solid #f7c151;
+}
+
+.postDisplay {
+  text-align: center;
+  max-width: 800px;
+}
+
+.freeText {
+  opacity: 0.8;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+/* .g-4{
+  width: 800px;
+  height:800px;
+} */
+
+.dropdown {
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .postDisplay {
+    margin: 30px 0;
+  }
+  .inputTitle {
+    font-size: 1.45rem;
+    padding-bottom: 15px;
+  }
+  .postDisplay {
+    min-width: 300px;
+  }
+}

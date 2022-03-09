@@ -5,12 +5,18 @@ import Image from "next/image";
 import homeImage from "../public/images/vegbox.jpg";
 import homeImage1 from "../public/images/homeImage1Copy.png";
 import homeImage2 from "../public/images/homeImage2.png";
+import homeImage3 from "../public/images/homeImage3.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-//added name prop to home - storybook testing
+import Head from "next/head";
 import css from "../styles/Home.module.css";
-function Home ({name = ""}) {
+
+function Home() {
   return (
     <div className={css.home}>
+      <Head>
+        <title>SalVeg</title>
+      </Head>
+      
       <div className={css.rightSide}>
         <div className={css.titleText}>
           <span>Shapeless {name && `${name}`} </span>
@@ -25,6 +31,7 @@ function Home ({name = ""}) {
           <button className={css.link}>Get Started</button>
         </Link>
       </div>
+       
       <div className={css.leftSide}>
         <Image
           src={homeImage1}
@@ -34,6 +41,7 @@ function Home ({name = ""}) {
         ></Image>
       </div>
     </div>
+      
   );
 }
 export default Home;

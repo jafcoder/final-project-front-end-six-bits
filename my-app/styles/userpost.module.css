@@ -1,0 +1,74 @@
+.container {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 800px;
+}
+
+.cardContainer {
+}
+.deleteBtn {
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #f7c151;
+  color: white;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15px;
+}
+.deleteBtn:hover {
+  background-color: #dfa633;
+}
+.refreshBtn{
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #f7c151;
+  color: white;
+  width: 20%;
+  margin-left: 25%;
+  margin-top: 15px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+
+}
+.refreshBtn:hover{
+  background-color: #dfa633;
+}
+
+
+@media (max-width: 600px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .title {
+    margin-top: 20px;
+  }
+  .cardContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 10px auto;
+  }
+  .deleteBtn{
+     display: block;
+     margin: 15px auto;
+  }
+  .container{
+    max-height: 0;
+  }
+}

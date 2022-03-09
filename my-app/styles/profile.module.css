@@ -1,17 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
-.content {
+.container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
 }
 
-.personalInfo {
+.infoSubmit {
+  background-color: rgb(248, 248, 248);
+  padding: 100px;
+  border-radius: 20px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  text-align: center;
+  z-index: 1;
 }
 
-.cardcontainer {
+.inputContainer {
+  border-bottom: 4px solid #f7c151;
+}
+
+.btnContainer {
   display: flex;
-  justify-content: row;
+  justify-content: center;
+}
+
+.submitTitle {
+  font-family: "Chewy";
+  padding-bottom: 50px;
+}
+
+.input {
+  color: green;
+  text-align: center;
+}
+
+.imageContainer {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 600px){
+  .container{
+     /* width: 100px; */
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 0 10px;
+  }
 }

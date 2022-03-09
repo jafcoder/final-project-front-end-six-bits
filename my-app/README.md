@@ -1,34 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![logo](https://user-images.githubusercontent.com/93525369/156549896-6ba5c047-9158-4497-99eb-846979a4c738.png)
 
-## Getting Started
+# SalVeg
 
-First, run the development server:
+This repo contains the front end for SalVeg - a web application created by Team Six Bits for our final 4 week project at the School of Code!
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+We were given a very open-ended brief - to solve a problem. <br></br>
+With this in mind, we decided to put our efforts towards solving the problem of food waste.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Our Problem Statement
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+> Of all fresh food that's produced, roughly a third of it is wasted, from farms and home growers. Despite supermarkets high cosmetic standards, a significant amount of consumers are prepared to buy wonky or otherwise edible vegetables, but there is no easy way to communicate with producers.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Our Solution
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We created an app that works as a platform to connect people who have excess fresh produce (whether this is farmers or home growers) to people who are happy to buy vegetables directly from producers even if they don't meet the standards held by supermarkets.
