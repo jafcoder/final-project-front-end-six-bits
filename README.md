@@ -1,3 +1,10 @@
+This repository contains the front end for the 4 week project completed as part of the [School of Code](https://www.schoolofcode.co.uk/) bootcamp.
+
+I was placed into a team of 6, working with people I hadn't worked with previously during the bootcamp. 
+
+If you'd like, you can see a recorded version of our presentation showing off our app and our working practices (AGILE methodology) [here](https://www.youtube.com/watch?v=AybJOKjKiGM).
+
+---
 
 ![logo](https://user-images.githubusercontent.com/93525369/157888177-96022560-68ce-473f-8c9a-fd497ad374ba.png)
 
@@ -21,14 +28,6 @@ Despite supermarkets' high cosmetic standards, a consumers are prepared to buy w
 ## Our Solution
 
 We created an app that works as a platform to connect people who have excess fresh produce (whether this is farmers or home growers) to people who are happy to buy vegetables directly from producers even if they don't meet the standards held by supermarkets.
-
-## Work Flow - Tickets
-[Trello](https://trello.com/sixbits2)
-
-## Project MockUp:
-[Miro Board](https://miro.com/app/board/uXjVONMC4Tw=/)
-
-[Figma](https://www.figma.com/file/3p7PyRYodOVWr08FAv2QTQ/Food-waste-app?node-id=0%3A1)
 
 
 ## Installation🔧
